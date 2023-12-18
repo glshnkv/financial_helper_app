@@ -33,12 +33,14 @@ class _NewsTileWidgetState extends State<NewsTileWidget> {
           child: Row(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SizedBox(
-                width: MediaQuery.of(context).size.width * 0.35,
-                height: MediaQuery.of(context).size.height * 0.15,
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+
                 child: Image.asset(
                   widget.image,
                   fit: BoxFit.cover,
+                  width: MediaQuery.of(context).size.width * 0.35,
+                  height: MediaQuery.of(context).size.height * 0.15,
                 ),
               ),
               SizedBox(width: 10),

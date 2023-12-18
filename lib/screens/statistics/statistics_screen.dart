@@ -228,20 +228,16 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
               padding: const EdgeInsets.all(15.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
-                // mainAxisAlignment: MainAxisAlignment.,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
                     height:
-                    MediaQuery
-                        .of(context)
-                        .size
-                        .height *
-                        0.1,
+                    100,
                     child: Column(
                       crossAxisAlignment:
                       CrossAxisAlignment.start,
                       mainAxisAlignment:
-                      MainAxisAlignment.spaceBetween,
+                      MainAxisAlignment.spaceEvenly,
                       children: [
                         Text(
                           'Edit username',
@@ -278,19 +274,14 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 15),
                   SizedBox(
                     height:
-                    MediaQuery
-                        .of(context)
-                        .size
-                        .height *
-                        0.1,
+                    100,
                     child: Column(
                       crossAxisAlignment:
                       CrossAxisAlignment.start,
                       mainAxisAlignment:
-                      MainAxisAlignment.spaceBetween,
+                      MainAxisAlignment.spaceEvenly,
                       children: [
                         Text(
                           'Edit E-mail',
@@ -327,7 +318,6 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20),
                   Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,

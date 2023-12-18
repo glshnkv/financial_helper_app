@@ -20,6 +20,7 @@ class NextButtonWidget extends StatelessWidget {
             SizedBox(
               width: MediaQuery.of(context).size.height * 0.15,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Align(

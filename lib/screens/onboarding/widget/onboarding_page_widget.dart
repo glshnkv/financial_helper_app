@@ -20,15 +20,20 @@ class _OnboardingPageWidgetState extends State<OnboardingPageWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.topCenter,
       width: double.infinity,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Image.asset(
-            widget.urlImage,
-            fit: BoxFit.cover,
-            width: double.infinity,
+          SizedBox(
+            child: Image.asset(
+              height: MediaQuery.of(context).size.height * 0.6,
+              widget.urlImage,
+              fit: BoxFit.cover,
+            ),
           ),
           Container(
+            height: MediaQuery.of(context).size.height * 0.2,
             padding: EdgeInsets.all(33),
             child: Center(
               child: Column(
@@ -50,10 +55,12 @@ class _OnboardingPageWidgetState extends State<OnboardingPageWidget> {
                         fontSize: 11,
                         fontWeight: FontWeight.w400),
                   ),
+                  SizedBox(height: 20),
                 ],
               ),
             ),
           ),
+          SizedBox(height: 20),
         ],
       ),
     );

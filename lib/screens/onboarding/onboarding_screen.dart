@@ -55,6 +55,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         ),
       ),
       bottomSheet: Container(
+        color: Colors.transparent,
+        width: double.infinity,
         height: MediaQuery.of(context).size.height * 0.2,
         child: Column(
           children: [
@@ -64,6 +66,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               effect: WormEffect(
                 activeDotColor: AppColors.blue,
                 dotColor: AppColors.grey,
+                dotHeight: 12,
+                dotWidth: 12,
               ),
             ),
             SizedBox(height: 15),
@@ -73,7 +77,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       content: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Continue'),
+                          Text('Continue', style: TextStyle(
+                              color: AppColors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400),),
                           SvgPicture.asset(
                               'assets/images/icons/arrow-right.svg'),
                         ],
@@ -86,7 +93,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       content: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Continue'),
+                          Text('Continue', style: TextStyle(
+                              color: AppColors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400),),
                           SvgPicture.asset(
                               'assets/images/icons/arrow-right.svg'),
                         ],
